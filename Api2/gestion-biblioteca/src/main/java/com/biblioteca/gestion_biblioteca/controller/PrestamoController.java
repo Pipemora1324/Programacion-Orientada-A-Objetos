@@ -14,6 +14,7 @@ public class PrestamoController {
 
     @PostMapping("/prestar")
     public Prestamo prestarLibro(@RequestBody Prestamo prestamo) {
+        // Aquí recibimos el JSON con los IDs del libro y usuario
         return prestamoService.prestarLibro(prestamo);
     }
 
